@@ -2,10 +2,10 @@ kind: Pod
 apiVersion: v1   
 metadata: 
   name: nginx-pod  # اسم الـ Pod
-  labels:
-   owner: nawal
-   app: nginx2
-   location: kuwait
+  # labels:
+  #  owner: nawal
+  #  app: nginx2
+  #  location: kuwait
 spec:   # مواصفات الـ Pod
   containers:    # الحاويات التي ستعمل داخل الـ Pod (يجب أن تكون بصيغة الجمع)
   - name: nginx-contanier  #  اسم الحاوية
