@@ -1,0 +1,22 @@
+kind: Pod  
+apiVersion: v1   
+metadata: 
+  name: nginx-pod  # اسم الـ Pod
+  # labels:
+  #  owner: nawal
+  #  app: nginx2
+  #  location: kuwait
+spec:   # مواصفات الـ Pod
+  containers:    # الحاويات التي ستعمل داخل الـ Pod (يجب أن تكون بصيغة الجمع)
+  - name: nginx-contanier  #  اسم الحاوية
+    image: nginx:latest  # الصورة المستخدمة للحاوية
+    ports: 
+    - containerPort: 80  # المنفذ الذي ستستمع عليه الحاوية
+
+    # لازم minikube يكون في حالة running
+
+#ما بقدر على المواصفات تعتبر ثابتة الى حد ما  (spec)
+    
+# minikube delete
+# sudo rm -rf ~/.minikube
+# minikube start
